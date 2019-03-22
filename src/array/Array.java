@@ -92,7 +92,7 @@ public class Array<E> {
 
     // 从数组中删除index位置的元素, 返回删除的元素
     public E remove(int index){
-        if(index < 0 || index >= size)
+        if(index < 0 || index  >= size)
             throw new IllegalArgumentException("Remove failed. Index is illegal.");
 
         E ret = data[index];
@@ -101,6 +101,7 @@ public class Array<E> {
         size --;
         data[size] = null; // loitering objects != memory leak
 
+        //缩容为1时
         if(size == data.length / 4 && data.length / 2 != 0)
             resize(data.length / 2);
         return ret;
@@ -121,6 +122,15 @@ public class Array<E> {
         int index = find(e);
         if(index != -1)
             remove(index);
+    }
+
+    public E getLast(){
+        return get(size-1);
+    }
+
+
+    public E getFirst(){
+        return get(0);
     }
 
     @Override
