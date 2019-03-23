@@ -1,4 +1,4 @@
-package stack;
+package line.static_array.stack;
 
 public interface Stack<E> {
 

@@ -1,6 +1,4 @@
-package stack;
-
-import java.util.Stack;
+package line.static_array.stack;
 
 /**
  * 匹配括号 {() []} 系统栈 撤销
@@ -8,7 +6,7 @@ import java.util.Stack;
 public class Solution {
 
     public boolean isValid(String s){
-        //Stack<Character> stack = new Stack<>();
+        //Stack<Character> line.static_array.stack = new Stack<>();
         ArrayStack<Character> stack = new ArrayStack<>();
         for(int i = 0;i<s.length();i++){
             char c = s.charAt(i);

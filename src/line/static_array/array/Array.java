@@ -1,4 +1,4 @@
-package array;
+package line.static_array.array;
 
 public class Array<E> {
 

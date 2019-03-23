@@ -1,7 +1,4 @@
-package queue;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+package line.static_array.queue;
 
 /**
  *front == tail 队列为空 (tail+1)% c = front 队列满
@@ -48,7 +45,7 @@ public class LoopQueue<E> implements Queue<E> {
     @Override
     public E dequeue() {
         if(isEmpty())
-            throw new IllegalArgumentException("Can not dequeue from empty queue");
+            throw new IllegalArgumentException("Can not dequeue from empty line.static_array.queue");
         E ret = data[front];
         data[front] = null;
         front = (front+1)% data.length;
@@ -61,7 +58,7 @@ public class LoopQueue<E> implements Queue<E> {
     @Override
     public E getFront() {
         if(isEmpty())
-            throw new IllegalArgumentException("Can not dequeue from empty queue");
+            throw new IllegalArgumentException("Can not dequeue from empty line.static_array.queue");
         return data[front];
     }
 

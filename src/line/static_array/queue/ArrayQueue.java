@@ -1,6 +1,6 @@
-package queue;
+package line.static_array.queue;
 
-import array.Array;
+import line.static_array.array.Array;
 
 
 

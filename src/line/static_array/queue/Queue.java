@@ -1,4 +1,4 @@
-package queue;
+package line.static_array.queue;
 
 public interface Queue<E> {
     void enqueue(E e);

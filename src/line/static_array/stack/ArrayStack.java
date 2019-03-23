@@ -1,6 +1,6 @@
-package stack;
+package line.static_array.stack;
 
-import array.Array;
+import line.static_array.array.Array;
 
 public class ArrayStack<E> implements Stack<E> {
 

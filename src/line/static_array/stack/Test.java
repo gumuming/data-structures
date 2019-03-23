@@ -1,6 +1,4 @@
-package stack;
-
-import java.util.Arrays;
+package line.static_array.stack;
 
 public class Test {
     public static void main(String[] args) {

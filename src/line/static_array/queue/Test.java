@@ -1,4 +1,4 @@
-package queue;
+package line.static_array.queue;
 
 import java.util.Random;
 
@@ -18,15 +18,20 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        int opCount = 1_00_000;
+        int opCount = 1_0_000_000;
 
-        ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
-        double v = testQueue(arrayQueue, opCount);
-        System.out.println("ArrayQueue, time"+v+" s");
+//        ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
+//        double v = testQueue(arrayQueue, opCount);
+//        System.out.println("ArrayQueue, time"+v+" s");
 
        LoopQueue<Integer>  loopQueue = new  LoopQueue<>();
-        double v1 = testQueue(arrayQueue, opCount);
+        double v1 = testQueue(loopQueue, opCount);
         System.out.println("loopQueue, time"+v1+" s");
+
+        LinkedListQueue<Integer>  linkedListQueue = new LinkedListQueue<>();
+        double v2 = testQueue(linkedListQueue, opCount);
+        System.out.println("linkedListQueue, time"+v2+" s");
+
 
 
     }
